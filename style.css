@@ -1,0 +1,224 @@
+body {
+    background-color: #FDFAE2;
+    color: #6F4F38;
+    font-family: gill Arial, Helvetica, sans-serif;
+}
+
+body h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    background-color: #FDFAE2;
+    color: black;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+
+.menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #6F4F38;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #B99470;
+    padding-top: 60px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+.menu-toggle-checkbox:checked + #sidebar {
+    transform: translateX(0);
+}
+
+#sidebar ul {
+    list-style: none;
+}
+
+#sidebar ul li {
+    margin: 20px 0;
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+header img {
+    width: 35%;
+    padding-top: 0.3em;
+}
+
+.header_img_over_mij {
+    width: 17.5%;
+}
+
+.header_img_werkwijze {
+    width: 30.8%;
+}
+
+.header_img_info {
+    width: 29.4%;
+}
+
+.header_img_aanvoer {
+    width: 39.2%;
+}
+
+main {
+    text-align: center;
+}
+
+main img {
+    padding-top: 1em;
+}
+
+.producten {
+    display: flex;
+    margin-right: 2.2em;
+}
+
+.producten img {
+    width: 100%;
+}
+
+main ul {
+    list-style-type: none;
+}
+
+main img {
+    width: 80%;
+}
+
+.over_mij_images {
+    width: 25%;
+    padding-bottom: 2em;
+}
+
+.over_mij_naast_elkaar {
+    display: flex;
+    justify-content: space-around;
+}
+
+.over_mij_naast_elkaar img{
+    width: 45%;
+    height: 45%;
+    border-radius: 4em;
+    padding-left: 1em;
+}
+
+.over_mij_naast_elkaar p{
+    line-height: normal;
+    padding-top: 2em;
+    text-align: left;
+    font-size: 0.95em;
+}
+
+.projecten-producten-container {
+    display: flex;
+    overflow-x: auto;
+}
+
+.projecten-producten-container img {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 90%;
+    border-radius: 2em;
+}
+
+main p {
+    text-align: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    line-height: 1.6em;
+}
+
+main h2 {
+    text-align: center;
+}
+
+main div {
+    background-color: #B99470;
+    color: #FCF9E3;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+main div img {
+    width: 88%;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+}
+
+main h1 {
+    text-align: center;
+}
+
+footer img {
+    width: 10%;
+}
+
+footer section div {
+    margin-left: 1em;
+}
+
+.footer_donker {
+    background-color: #B99470;
+    color: #FCF9E3;
+    padding-top: 0.3em;
+    padding-bottom: 0.3em;
+    border-radius: 1em;
+}
+
+.kleine_tekst {
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.navigatie_footer {
+    width: 16.5%;
+    padding-left: 0.8em;
+}
+
+.navigatie_footer_info {
+    width: 15%;
+    padding-left: 0.7em;
+    padding-right: 0.5em;
+}
+
+.navigatie_footer_over_mij {
+    width: 9%;
+}
